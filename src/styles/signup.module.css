@@ -1,0 +1,357 @@
+:root {
+  --colorprimary: #ffba33;
+  --colorsecondary: #6a4029;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: rubik;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: white;
+}
+main {
+  height: 1100px;
+}
+/* overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+#myAlert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ccc;
+  z-index: 9999;
+  text-align: center;
+}
+#myAlert button {
+  background-color: red;
+}
+#myAlert button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+/*--------------------------------------topside*/
+.header {
+  display: flex;
+  margin-left: 56px;
+}
+.top-side {
+  display: flex;
+  height: 1100px;
+}
+.bgflex {
+  flex: 1;
+}
+.bg-left-side img {
+  width: 100%;
+  height: 1100px;
+}
+.right-side {
+  flex: 1;
+}
+header {
+  display: flex;
+  padding-left: 7.36%;
+  margin-top: 8%;
+}
+header img {
+  height: 33px;
+  width: 4.7%;
+}
+header h1 {
+  padding-left: 2.1%;
+}
+header button {
+  border-radius: 50px;
+  width: 20%;
+  height: 45px;
+  background-color: var(--colorprimary);
+  margin-left: 266px;
+}
+header button:hover {
+  background-color: hsla(40, 100%, 60%, 80%);
+  cursor: pointer;
+}
+form {
+  text-align: center;
+}
+.right-side h2 {
+  color: #6a4029;
+  font-size: 2.18rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 71px;
+}
+form .label {
+  color: #4f5665;
+  font-size: 20px;
+  margin-top: 32px;
+  text-align: left;
+  margin-left: 134px;
+  font-weight: 700;
+}
+form .label-email {
+  margin-top: 59px;
+  color: #4f5665;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 134px;
+  font-weight: 700;
+}
+.error {
+  display: none;
+  color: red;
+}
+.show-error {
+  display: block;
+}
+form .form {
+  height: 75px;
+  border-radius: 20px;
+  color: black;
+  font-size: 20px;
+  text-indent: 20px;
+  margin-top: 13px;
+  width: 66.5%;
+  border: 1px solid #4f5665;
+}
+form .signup {
+  width: 66.5%;
+  height: 75px;
+  border-radius: 20px;
+  background-color: #ffba33;
+  margin-top: 47px;
+  color: #6a4029;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+form .signup:hover {
+  background-color: hsla(40, 100%, 60%, 80%);
+  cursor: pointer;
+}
+form .signup-google {
+  height: 75px;
+  background-color: white;
+  box-shadow: 0px 6px rgba(196, 196, 196, 0.67);
+  border-radius: 20px;
+  width: 66.5%;
+  margin-top: 26px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  filter: drop-shadow(0 0 0.75rem rgba(57, 57, 57, 0.1));
+}
+form .signup-google img {
+  width: 27px;
+  height: 28px;
+}
+form .signup-google:hover {
+  cursor: pointer;
+}
+
+/*----------------------middleside-----------------------------------*/
+.middle-side {
+  z-index: 1;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  width: 78%;
+  position: relative;
+  top: -125px;
+  align-items: center;
+  height: 233px;
+  margin: auto;
+}
+.flex-mid-left {
+  flex: 2;
+  margin-left: 70px;
+}
+.flexbutton {
+  flex: 1;
+}
+.getmember h3 {
+  font-size: 2.18rem;
+  width: 51%;
+  color: #0b132a;
+}
+.getmember p {
+  color: #4f5665;
+  font-family: rubik-regular;
+}
+.flexbutton button {
+  background-color: #ffba33;
+  border-radius: 10px;
+  width: 90%;
+  height: 60px;
+  color: #6a4029;
+  list-style: none;
+  font-family: rubik;
+  font-weight: 700;
+}
+.flexbutton button:hover {
+  background-color: hsla(40, 100%, 60%, 80%);
+  cursor: pointer;
+}
+/*-----------------------------footer---------------------------*/
+footer {
+  display: flex;
+  height: 528px;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+.botleft {
+  margin-top: 181px;
+  flex: 2;
+  width: 100%;
+}
+.leftbot {
+  width: 100%;
+  margin-left: 170px;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 33px;
+  width: 20%x;
+}
+.logo h4 {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.leftbot .desc {
+  margin-top: 22px;
+  width: 32%;
+  font-weight: 16px;
+  line-height: 30px;
+}
+.leftbot .social-media {
+  display: flex;
+  gap: 20px;
+  margin-top: 45.42px;
+}
+.facebook {
+  width: 100%;
+  height: 33.6px;
+  border-radius: 50%;
+  background-color: #6a4029;
+}
+.twitter {
+  width: 100%;
+  height: 33.6px;
+  border-radius: 50%;
+  background-color: #6a4029;
+}
+.instagram {
+  width: 100%;
+  height: 33.6px;
+  border-radius: 50%;
+  background-color: #6a4029;
+}
+.leftbot .copyright {
+  margin-top: 30px;
+}
+.botright {
+  flex: 1;
+  width: 100%;
+}
+.rightbot {
+  display: flex;
+  width: 100%;
+  gap: 129px;
+  margin-top: 181px;
+}
+.rightbot .product {
+  width: 25%;
+}
+.rightbot .product p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.rightbot .product li {
+  margin-top: 20px;
+}
+.rightbot .engage {
+  width: 200%;
+}
+.rightbot .engage p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.rightbot .engage ul {
+  width: 100%;
+}
+.rightbot .engage li {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .bg-left-side {
+    display: none;
+  }
+  .top-side {
+    display: block;
+  }
+  main {
+    height: 1230px;
+    background: linear-gradient(#f1ce8cc0, #f1ce8cc0), url("../assets/bg.webp");
+    background-size: cover;
+  }
+  header {
+    margin: 0px;
+    padding-top: 50px;
+  }
+  .right-side h2 {
+    margin-top: 200px;
+  }
+  header button {
+    margin-left: 50%;
+  }
+  .middle-side {
+    top: 0px;
+  }
+  footer {
+    height: 530px;
+  }
+  .leftbot {
+    flex: 1;
+    margin-left: 20px;
+  }
+  .leftbot .desc {
+    width: 50%;
+  }
+  .rightbot {
+    gap: 30px;
+  }
+  .rightbot .product {
+    margin-left: 5%;
+  }
+  .rightbot .engage {
+    width: 100%;
+  }
+}
