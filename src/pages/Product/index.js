@@ -17,6 +17,7 @@ const Product = () => {
     category: "",
   });
   useEffect(() => {
+    document.title = "Product";
     const fetchData = async () => {
       if (token) {
         setIsLoggedIn(true);

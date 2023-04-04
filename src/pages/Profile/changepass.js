@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { editPassword } from "../../utils/https/getUsers";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -20,7 +20,9 @@ const EditPassword = () => {
         console.log(err);
       });
   };
-
+  useEffect(() => {
+    document.title = "Change Password";
+  });
   return (
     <Fragment>
       <Header />

@@ -14,6 +14,7 @@ const ProductDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    document.title = "ProductDetail";
     const fetchData = async () => {
       setLoading(true);
       setError(null);
