@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <nav className="flex justify-between items-center px-[70px] h-[157px] bg-white border-b border-solid border-[#9f9f9f]">
-      <div className="flex">
+      <div className="flex ml-20">
         <img className="w-1/5 h-8 mr-5" src={cofe} alt="" />
         <h3 className="w-[120%] mt-1 text-xl">Coffee Shop</h3>
       </div>
@@ -45,7 +45,7 @@ const Header = () => {
           History
         </li>
       </ul>
-      <ul className="flex gap-10">
+      <ul className="flex gap-10 mr-28">
         <li>
           <i className="hidden lg:flex" data-feather="menu"></i>
         </li>

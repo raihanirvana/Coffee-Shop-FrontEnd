@@ -34,7 +34,12 @@ const Profile = () => {
     setEditModeTop(false);
     setEditModeBot(false);
   };
+  const handleLogout = () => {
+    localStorage.removeItem("persist:kopi_toko");
+    window.location.reload();
+  };
   useEffect(() => {
+    document.title = "Profile";
     getProfile(id)
       .then((response) => {
         setUserData(response.data.data);
@@ -95,6 +100,10 @@ const Profile = () => {
                     action=""
                   >
                     <div className="pt-12">
+                      <div
+                        onClick={handleEdit}
+                        className="bg-[url('../assets/pen.svg')] h-12 bg-[#6a4029] absolute rounded-[50%] bg-no-repeat w-12 left-[320px] top-[400px] bg-pen"
+                      ></div>
                       <img
                         className="m-auto h-[200px] w-[30%] lg:w-[40%] lg:h-[120px] rounded-[50%] object-cover lg:mb-[10px] object-op"
                         src={profile}
@@ -318,7 +327,10 @@ const Profile = () => {
                           </button>
                         </li>
                         <li className="mt-5">
-                          <button className="m-auto w-[90%] rounded-[20px] text-[#6a4029] bg-white text-xl font-bold indent-5 p-24">
+                          <button
+                            onClick={handleLogout}
+                            className="m-auto w-[90%] rounded-[20px] text-[#6a4029] bg-white text-xl font-bold indent-5 p-24"
+                          >
                             Log out <span className="pl-[400px]">&gt;</span>
                           </button>
                         </li>

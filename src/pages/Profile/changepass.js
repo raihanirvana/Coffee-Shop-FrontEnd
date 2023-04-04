@@ -1,17 +1,18 @@
 import React, { Fragment, useState } from "react";
 import { editPassword } from "../../utils/https/getUsers";
-import { get } from "../../utils/localStorage";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { useSelector } from "react-redux";
 const EditPassword = () => {
   const [oldPass, setOldPass] = useState("");
   const [newPass, setNewPass] = useState("");
   const [message, setMessage] = useState("");
-  const id = get("id");
+  const token = useSelector((state) => state.user.data.token);
+  const id = useSelector((state) => state.user.data.id);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    editPassword(id, oldPass, newPass)
+    editPassword(id, token, oldPass, newPass)
       .then((response) => {
         setMessage(response.data.msg);
       })

@@ -1,20 +1,12 @@
 import axios from "axios";
-import { get } from "../../utils/localStorage";
-export const getUsers = (controller, onSuccess, onFailure) => {
-  return axios
-    .get("https://jsonplaceholder.typicode.com/users", {
-      signal: controller.signal,
-    })
-    .then(onSuccess)
-    .catch(onFailure);
-};
+const API_URL = `${process.env.REACT_APP_LOCAL_HOST}`;
 
 export const login = (email, pass) => {
   const body = {
     email: email,
     pass: pass,
   };
-  const url = "http://localhost:8080/auth";
+  const url = `${API_URL}/auth`;
   return axios.post(url, body);
 };
 
@@ -24,7 +16,7 @@ export const register = (email, pass, phone_number, controller) => {
     pass: pass,
     phone_number: phone_number,
   };
-  const url = "http://localhost:8080/auth/register";
+  const url = `${API_URL}/auth/register`;
   return axios.post(url, body, {
     signal: controller.signal,
   });
@@ -34,7 +26,7 @@ export const checkEmail = (email, controller) => {
   const body = {
     email: email,
   };
-  const url = "http://localhost:8080/auth/forgotpass";
+  const url = `${API_URL}/auth/forgotpass`;
   return axios.post(url, body, {
     signal: controller.signal,
   });
@@ -46,7 +38,7 @@ export const changePass = (email, otp, newPass) => {
     otp: otp,
     newPass: newPass,
   };
-  const url = "http://localhost:8080/auth/changepassforgot";
+  const url = `${API_URL}/auth/changepassforgot`;
   return axios.patch(url, body);
 };
 
@@ -70,7 +62,7 @@ export const inputProfile = (
     address: address,
     birthday: birthday,
   };
-  const url = `http://localhost:8080/users/updateUser/${id}`;
+  const url = `${API_URL}/users/updateUser/${id}`;
   return axios.patch(url, body, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -112,17 +104,17 @@ export const transaction = (
   });
 };
 export const getProfile = (id) => {
-  const url = `http://localhost:8080/users?userId=${id}`;
+  const url = `${API_URL}/users?userId=${id}`;
   return axios.get(url);
 };
 
-export const editPassword = (id, oldPass, newPassword) => {
+export const editPassword = (id, token, oldPass, newPassword) => {
   const body = {
     id: id,
+    token: token,
     oldPass: oldPass,
     newPassword: newPassword,
   };
-  const token = get("tokokopi-token");
   const url = "http://localhost:8080/auth";
   return axios.patch(url, body, {
     headers: {
@@ -133,9 +125,7 @@ export const editPassword = (id, oldPass, newPassword) => {
 
 export const getProducts = async (category) => {
   try {
-    const response = await axios.get(
-      `http://localhost:8080/product?category=${category}`
-    );
+    const response = await axios.get(`${API_URL}/product?category=${category}`);
     return response.data.data;
   } catch (error) {
     throw new Error(error);
