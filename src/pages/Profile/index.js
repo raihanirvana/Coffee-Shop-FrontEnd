@@ -1,12 +1,12 @@
 import React, { Fragment, useState, useMemo, useEffect } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import profile from "../../assets/profile.webp";
 import { useNavigate } from "react-router-dom";
 import { inputProfile, getProfile } from "../../utils/https/getUsers";
 import { useSelector } from "react-redux";
 
 const Profile = () => {
+  const [fileLink, setFileLink] = useState("");
   const [email, setEmail] = useState("");
   const [phone_number, setPhoneNumber] = useState("");
   const [editModeTop, setEditModeTop] = useState(false);
@@ -26,6 +26,11 @@ const Profile = () => {
   const handleEdit = () => {
     setEditModeTop(true);
   };
+  // const handlePict = (e) => {
+  //   e.preventDefault();
+  //   setFileLink({ file: e.target.files[0] });
+  //   console.log({ file: e.target.files[0] });
+  // };
   const HandleEditBot = () => {
     setEditModeBot(true);
   };
@@ -50,6 +55,7 @@ const Profile = () => {
         setFirstName(response.data.data[0].first_name);
         setLastName(response.data.data[0].last_name);
         setBirthday(response.data.data[0].birthday);
+        setFileLink(response.data.data[0].image);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -60,9 +66,11 @@ const Profile = () => {
     event.preventDefault();
     navigate("/editpass");
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     inputProfile(
+      fileLink,
       id,
       token,
       email,
@@ -104,9 +112,17 @@ const Profile = () => {
                         onClick={handleEdit}
                         className="bg-[url('../assets/pen.svg')] h-12 bg-[#6a4029] absolute rounded-[50%] bg-no-repeat w-12 left-[320px] top-[400px] bg-pen"
                       ></div>
+                      {/* <input
+                        type="file"
+                        onChange={handlePict}
+                        multiple={false}
+                        id="avatar"
+                        name="avatar"
+                        className=" rounded-md absolute inset-0  cursor-pointer z-30  opacity-0 "
+                      /> */}
                       <img
                         className="m-auto h-[200px] w-[30%] lg:w-[40%] lg:h-[120px] rounded-[50%] object-cover lg:mb-[10px] object-op"
-                        src={profile}
+                        src={userData[0].image}
                         alt=""
                       />
                     </div>

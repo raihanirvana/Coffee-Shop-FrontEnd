@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h2 align="center">Coffee Shop</h2>
 
-## Available Scripts
+<br>
+<img src="https://skillicons.dev/icons?i=react,javascript,html,css,redux,tailwind,vercel,daisyui" />
 
-In the project directory, you can run:
+  <p align="center">
+    <a href="https://coffee-shop-front-end.vercel.app/">View Demo</a>
+    ·
+    <a href="mailto:raihanirvana13@gmail.com">Report Bug</a>
+    ·
+    <a href="mailto:raihanirvana13@gmail.com">Request Feature</a>
+  </p>
+</div>
 
-### `npm start`
+## Coffee Shop
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Coffee Shop is a web-based application for buying online coffee.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Build With
 
-### `npm test`
+This application is built using React.js, , Redux, axios, Lodash, Chart.js, React-Pin-Field, TailwindCSS, and DaisyUI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+### Public
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Login
+- Register
+- Forgot Password
+- Buy Coffee
+- Online Payment
+- Edit Profile
+- Etc
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to run the application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application, follow these steps:
 
-### `npm run eject`
+1. Clone this repository to your computer.
+2. Open a terminal in the repository directory and run the `npm install` command to install all required dependencies.
+3. After it finishes, run the `npm run dev` command to run the application.
+4. Open a browser and visit `http://localhost:3000` to see the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you would like to contribute to this project, please send a pull request to this repository. We greatly appreciate your contributions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Documentation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="500" src="./public/readme/landing.png" alt="Landing page">
+<img width="500" src="./public/readme/login.png" alt="Landing page">
+<img width="500" src="./public/readme/product.jpg" alt="Landing page">
+<img width="500" src="./public/readme/payment.jpg" alt="Landing page">

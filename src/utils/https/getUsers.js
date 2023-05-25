@@ -43,6 +43,7 @@ export const changePass = (email, otp, newPass) => {
 };
 
 export const inputProfile = (
+  fileLink,
   id,
   token,
   email,
@@ -54,6 +55,7 @@ export const inputProfile = (
   birthday
 ) => {
   const body = {
+    fileLink: fileLink,
     email: email,
     phone_number: phone_number,
     first_name: first_name,
@@ -96,7 +98,8 @@ export const transaction = (
     qty: qty,
     subtotal: subtotal,
   };
-  const url = `http://localhost:8080/transactions/${id}`;
+
+  const url = `${API_URL}/transactions/${id}`;
   return axios.post(url, body, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -115,7 +118,7 @@ export const editPassword = (id, token, oldPass, newPassword) => {
     oldPass: oldPass,
     newPassword: newPassword,
   };
-  const url = "http://localhost:8080/auth";
+  const url = `${API_URL}/auth`;
   return axios.patch(url, body, {
     headers: {
       Authorization: `Bearer ${token}`,
