@@ -1,55 +1,105 @@
-<div align="center">
+<div align='center' style="text-align: center;">
 
-  <h2 align="center">Coffee Shop</h2>
+<h1 style="border:0;margin:1rem">Electronic Walet</h1>
 
+Front End for Coffee Shop
+
+[Demo](https://coffee-shop-front-end.vercel.app) · [Suggestion](mailto:raihanirvana13@gmail.com)
+
+<hr>
 <br>
-<img src="https://skillicons.dev/icons?i=react,javascript,html,css,redux,tailwind,vercel,daisyui" />
 
-  <p align="center">
-    <a href="https://coffee-shop-front-end.vercel.app/">View Demo</a>
-    ·
-    <a href="mailto:raihanirvana13@gmail.com">Report Bug</a>
-    ·
-    <a href="mailto:raihanirvana13@gmail.com">Request Feature</a>
-  </p>
 </div>
 
-## Coffee Shop
+## Table of Contents
 
-Coffee Shop is a web-based application for buying online coffee.
+- [Table of Contents](#table-of-contents)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Project ScreenShoot](#project-screenshots)
+- [Resources](#resources)
+- [Contributors](#contributors)
+- [License](#license)
+- [Suggestion](#suggestion)
 
-## Build With
+## Technologies Used
 
-This application is built using React.js, , Redux, axios, Lodash, Chart.js, React-Pin-Field, TailwindCSS, and DaisyUI.
+- [ReactJS](https://legacy.reactjs.org/docs/getting-started.html)
+- [Redux](https://redux-toolkit.js.org)
+- [Tailwind](https://tailwindcss.com/)
+- etc.
 
 ## Features
 
-### Public
+1. Register
+2. Login
+3. Profile
+4. Online Coffee Shopping
+5. Cart
+6. Payment
 
-- Login
-- Register
-- Forgot Password
-- Buy Coffee
-- Online Payment
-- Edit Profile
-- Etc
+## Getting Started
 
-## How to run the application
+### Installation
 
-To run the application, follow these steps:
+1. Clone this repo
 
-1. Clone this repository to your computer.
-2. Open a terminal in the repository directory and run the `npm install` command to install all required dependencies.
-3. After it finishes, run the `npm run dev` command to run the application.
-4. Open a browser and visit `http://localhost:3000` to see the application.
+   ```bash
+   git clone https://github.com/raihanirvana/Coffee-Shop-FrontEnd.git
+   ```
 
-## Contributions
+2. Enter the directory
 
-If you would like to contribute to this project, please send a pull request to this repository. We greatly appreciate your contributions.
+   ```bash
+   cd Coffee-Shop-FrontEnd
+   ```
 
-## Documentation
+3. Install all dependencies
 
-<img width="500" src="./public/readme/landing.png" alt="Landing page">
-<img width="500" src="./public/readme/login.png" alt="Landing page">
-<img width="500" src="./public/readme/product.jpg" alt="Landing page">
-<img width="500" src="./public/readme/payment.jpg" alt="Landing page">
+   ```bash
+   npm install
+   ```
+
+4. Create .env file
+
+   ```env
+   Backend_URL = [Backend URL]
+   ```
+
+5. Start the local server
+
+   ```bash
+   node index.js
+   ```
+
+   or (if you want auto start if any change in code)
+
+   ```bash
+   npm run dev
+   ```
+
+## Project Screenshots:
+
+<img src="https://user-images.githubusercontent.com/83262495/245555983-79c43375-cb8c-4d96-b1e7-4c136f20878e.jpeg" alt="project-screenshot">
+
+<img src="https://user-images.githubusercontent.com/83262495/245556120-32fb19b3-5b1e-4f90-8a79-3d1c3b9139f1.jpeg" alt="project-screenshot">
+
+## Resources
+
+Special thanks to:
+
+- [Vercel](https://vercel.com) - deploying code
+
+## Contributors
+
+Currently, there are no contributors to this project. If you would like to contribute, you can submit a pull request.
+
+## License
+
+This project is licensed under the ISC License
+
+## Suggestion
+
+If you find bugs / find better ways / suggestions you can pull request.
