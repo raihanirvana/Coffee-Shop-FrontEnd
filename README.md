@@ -1,6 +1,6 @@
 <div align='center' style="text-align: center;">
 
-<h1 style="border:0;margin:1rem">Electronic Walet</h1>
+<h1 style="border:0;margin:1rem">Online Coffee Shop</h1>
 
 Front End for Coffee Shop
 
@@ -21,6 +21,7 @@ Front End for Coffee Shop
 - [Project ScreenShoot](#project-screenshots)
 - [Resources](#resources)
 - [Contributors](#contributors)
+- [Related Project](#related-project)
 - [License](#license)
 - [Suggestion](#suggestion)
 
@@ -95,6 +96,10 @@ Special thanks to:
 ## Contributors
 
 Currently, there are no contributors to this project. If you would like to contribute, you can submit a pull request.
+
+## Related Projects
+
+- [Coffee Shop Backend](https://github.com/raihanirvana/backend-week5) - Backend
 
 ## License
 
