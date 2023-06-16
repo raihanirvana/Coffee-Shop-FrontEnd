@@ -104,7 +104,7 @@ Currently, there are no contributors to this project. If you would like to contr
 
 ## Related Projects
 
-- [Coffee Shop Backend](https://github.com/raihanirvana/backend-week5) - Backend
+- [Coffee Shop Backend](https://github.com/raihanirvana/Coffee-Shop-BE) - Backend
 - [Coffee Shop Front End Mobile Version](https://github.com/raihanirvana/CoffeeShop-Mobile-Native) - Front End Mobile Version
 
 ## License
